@@ -6,6 +6,7 @@ import UserPage from "../pages/UserPage";
 import NotFound from "../components/Common/NotFound";
 import RegisterPage from "../pages/RegisterPage";
 import ReviewPage from "../pages/ReviewPage";
+import Test from "../components/Test";
 
 export default function Router() {
   return (
@@ -16,6 +17,7 @@ export default function Router() {
       <Route path="/mypage" element={<UserPage />} />
       <Route path="/register" element={<RegisterPage />} />
       <Route path="/review" element={<ReviewPage />} />
+      <Route path="/test" element={<Test />}/>
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
